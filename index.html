@@ -8,7 +8,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/nlogo.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,22 +32,21 @@
 
 <body>
     <!-- this is the loading section -->
-    <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <!-- <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
-    </div>
+    </div> -->
     <!-- Spinner End -->
 
-
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark  py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
         
-        <div class="col-md-4 col-5 mt-1">
+        <div class="col-md-6 col-5 mt-1">
             <a href="index.html" class="navbar-brand ms-2 ms-lg-0">
                 <!-- <h1 class="mb-0 text-primary text-uppercase">logo</h1> -->
-                 <img class="img-fluid col-md-3 col-7" src="img/nlogo.png" alt="">
-            </a>
+                 <img class="img-fluid col-md-2 col-4 position-absolute top-0" src="img/nlogo.png" alt="logo">
+            </a>                    
         </div>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -121,6 +120,27 @@
 
     <!-- Carousel End -->
 
+    <!-- This is the category section -->
+    <section class="image-row-section">
+        <h1 class="text-center py-4">Our Category</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="https://cpimg.tistatic.com/21766/18/template_photo_8.jpg" alt="Image 1" class="img-fluid styled-img">
+            </div>
+            <div class="col-md-6">
+              <img src="https://cpimg.tistatic.com/21766/18/template_photo_9.jpg" alt="Image 2" class="img-fluid styled-img">
+            </div>
+            <div class="col-md-6 mt-2">
+              <img src="https://cpimg.tistatic.com/21766/18/template_photo_10.jpg" alt="Image 2" class="img-fluid styled-img">
+            </div>
+            <div class="col-md-6 mt-2">
+              <img src="https://cpimg.tistatic.com/21766/18/template_photo_11.jpg" alt="Image 2" class="img-fluid styled-img">
+            </div>
+          </div>
+        </div>
+      </section>
+     <!-- End category section -->
 
     <!-- About Start -->
     <div class="container-xxl py-5">
@@ -143,7 +163,7 @@
                     <div class="row g-4">
                         <div class="col-md-6">
                             <h3 class="text-uppercase mb-3">Since 1980</h3>
-                            <p class="mb-0">Trusted for quality and innovation for over 40 years.</p>
+                            <p class="mb-0">Trusted for quality and innovation for over 44 years.</p>
                         </div>
                         <div class="col-md-6">
                             <h3 class="text-uppercase mb-3">1000+ clients</h3>
@@ -155,7 +175,6 @@
         </div>
     </div>
     <!-- About End -->
-     
 
      <!-- product section Start -->
      <div class="container-xxl py-5 ">
@@ -164,11 +183,14 @@
                 <p class="d-inline-block bg-secondary text-primary py-1 px-4">Our Product</p>
                 <h1 class="text-uppercase">Our Product</h1>
             </div>
+
+        <!-- This is the first card section -->
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/product/esrgarg.png" alt="" 
+                    <!-- Card 1 -->
+                    <div class="team-item" >
+                        <div class="position-relative overflow-hidden " style="border-radius: 10px;">
+                            <img class="img-fluid" src="img/product/p1.png" alt="" 
                                  style="transition: transform 0.5s ease-in-out; will-change: transform;" 
                                  onmouseover="this.style.transform='scale(1.05)'" 
                                  onmouseout="this.style.transform='scale(1)'">
@@ -176,7 +198,7 @@
                         <div class="bg-secondary text-center p-4">
                             <h5 class="text-uppercase">product : cooker</h5>
                             <a href="#">
-                            <button class="btn bg-danger text-white w-75" style="border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
+                            <button class="btn text-white w-75" style="background-color: red; border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
                             onmouseover="this.style.transform='scale(1.05)'" 
                             onmouseout="this.style.transform='scale(1)'">Inquiry</button>
                             </a>
@@ -185,9 +207,10 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <!-- Card 2 -->
                     <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/product/esrgarg.png" alt="" 
+                        <div class="position-relative overflow-hidden" style="border-radius: 10px;">
+                            <img class="img-fluid" src="img/product/p2.png" alt="" 
                                  style="transition: transform 0.5s ease-in-out; will-change: transform;" 
                                  onmouseover="this.style.transform='scale(1.05)'" 
                                  onmouseout="this.style.transform='scale(1)'">
@@ -195,7 +218,7 @@
                         <div class="bg-secondary text-center p-4">
                             <h5 class="text-uppercase">product : cooker</h5>
                             <a href="#">
-                            <button class="btn bg-danger text-white w-75" style="border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
+                            <button class="btn  text-white w-75" style="background-color: red; border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
                             onmouseover="this.style.transform='scale(1.05)'" 
                             onmouseout="this.style.transform='scale(1)'">Inquiry</button>
                             </a>
@@ -204,9 +227,10 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <!-- Card 3 -->
                     <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/product/esrgarg.png" alt="" 
+                        <div class="position-relative overflow-hidden" style="border-radius: 10px;">
+                            <img class="img-fluid" src="img/product/p3.png" alt="" 
                                  style="transition: transform 0.5s ease-in-out; will-change: transform;" 
                                  onmouseover="this.style.transform='scale(1.05)'" 
                                  onmouseout="this.style.transform='scale(1)'">
@@ -214,7 +238,7 @@
                         <div class="bg-secondary text-center p-4">
                             <h5 class="text-uppercase">product : cooker</h5>
                             <a href="#">
-                            <button class="btn bg-danger text-white w-75" style="border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
+                            <button class="btn  text-white w-75" style="background-color: red; border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
                             onmouseover="this.style.transform='scale(1.05)'" 
                             onmouseout="this.style.transform='scale(1)'">Inquiry</button>
                             </a>
@@ -223,9 +247,10 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <!-- Card 4 -->
                     <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/product/esrgarg.png" alt="" 
+                        <div class="position-relative overflow-hidden" style="border-radius: 10px;">
+                            <img class="img-fluid" src="img/product/p4.png" alt="" 
                                  style="transition: transform 0.5s ease-in-out; will-change: transform;" 
                                  onmouseover="this.style.transform='scale(1.05)'" 
                                  onmouseout="this.style.transform='scale(1)'">
@@ -233,7 +258,7 @@
                         <div class="bg-secondary text-center p-4">
                             <h5 class="text-uppercase">product : cooker</h5>
                             <a href="#">
-                            <button class="btn bg-danger text-white w-75" style="border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
+                            <button class="btn  text-white w-75" style="background-color: red; border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
                             onmouseover="this.style.transform='scale(1.05)'" 
                             onmouseout="this.style.transform='scale(1)'">Inquiry</button>
                             </a>
@@ -243,12 +268,13 @@
                 </div>
             </div>
 
-            <!-- This is the second line of the product  -->
+        <!-- This is the second line of the product  -->
             <div class="row g-4 mt-4">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <!-- Card 5 -->
                     <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/product/esrgarg.png" alt="" 
+                        <div class="position-relative overflow-hidden" style="border-radius: 10px;">
+                            <img class="img-fluid" src="img/product/p7.png" alt="" 
                                  style="transition: transform 0.5s ease-in-out; will-change: transform;" 
                                  onmouseover="this.style.transform='scale(1.05)'" 
                                  onmouseout="this.style.transform='scale(1)'">
@@ -256,7 +282,7 @@
                         <div class="bg-secondary text-center p-4">
                             <h5 class="text-uppercase">product : cooker</h5>
                             <a href="#">
-                            <button class="btn bg-danger text-white w-75" style="border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
+                            <button class="btn  text-white w-75" style="background-color: red; border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
                             onmouseover="this.style.transform='scale(1.05)'" 
                             onmouseout="this.style.transform='scale(1)'">Inquiry</button>
                             </a>
@@ -265,9 +291,10 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <!-- Card 6 -->
                     <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/product/esrgarg.png" alt="" 
+                        <div class="position-relative overflow-hidden" style="border-radius: 10px;">
+                            <img class="img-fluid" src="img/product/p8.png" alt="" 
                                  style="transition: transform 0.5s ease-in-out; will-change: transform;" 
                                  onmouseover="this.style.transform='scale(1.05)'" 
                                  onmouseout="this.style.transform='scale(1)'">
@@ -275,7 +302,7 @@
                         <div class="bg-secondary text-center p-4">
                             <h5 class="text-uppercase">product : cooker</h5>
                             <a href="#">
-                            <button class="btn bg-danger text-white w-75" style="border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
+                            <button class="btn  text-white w-75" style="background-color: red; border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
                             onmouseover="this.style.transform='scale(1.05)'" 
                             onmouseout="this.style.transform='scale(1)'">Inquiry</button>
                             </a>
@@ -284,9 +311,10 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <!-- Card 7 -->
                     <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/product/esrgarg.png" alt="" 
+                        <div class="position-relative overflow-hidden" style="border-radius: 10px;">
+                            <img class="img-fluid" src="img/product/P9.png" alt="" 
                                  style="transition: transform 0.5s ease-in-out; will-change: transform;" 
                                  onmouseover="this.style.transform='scale(1.05)'" 
                                  onmouseout="this.style.transform='scale(1)'">
@@ -294,7 +322,7 @@
                         <div class="bg-secondary text-center p-4">
                             <h5 class="text-uppercase">product : cooker</h5>
                             <a href="#">
-                            <button class="btn bg-danger text-white w-75" style="border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
+                            <button class="btn  text-white w-75" style="background-color: red; border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
                             onmouseover="this.style.transform='scale(1.05)'" 
                             onmouseout="this.style.transform='scale(1)'">Inquiry</button>
                             </a>
@@ -303,9 +331,10 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <!-- Card 8 -->
                     <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/product/esrgarg.png" alt="" 
+                        <div class="position-relative overflow-hidden" style="border-radius: 10px;">
+                            <img class="img-fluid" src="img/product/P10.png" alt="" 
                                  style="transition: transform 0.5s ease-in-out; will-change: transform;" 
                                  onmouseover="this.style.transform='scale(1.05)'" 
                                  onmouseout="this.style.transform='scale(1)'">
@@ -313,7 +342,7 @@
                         <div class="bg-secondary text-center p-4">
                             <h5 class="text-uppercase">product : cooker</h5>
                             <a href="#">
-                            <button class="btn bg-danger text-white w-75" style="border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
+                            <button class="btn  text-white w-75" style="background-color: red; border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
                             onmouseover="this.style.transform='scale(1.05)'" 
                             onmouseout="this.style.transform='scale(1)'">Inquiry</button>
                             </a>
@@ -418,7 +447,6 @@
     </div>
     <!-- Service End -->
 
-
     <!-- Price Start -->
     <div class="container-xxl py-5 d-none ">
         <div class="container">
@@ -464,48 +492,44 @@
         </div>
     </div>
     <!-- Price End -->
-
-
    
-
-
     <!-- Working Hours Start -->
-    <div class="container-xxl py-5 d-none">
+    <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-0">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="h-100">
-                        <img class="img-fluid h-100" src="img/open.jpg" alt="">
+                        <img class="img-fluid h-100" src="img/open2.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <div class="bg-secondary h-100 d-flex flex-column justify-content-center p-5">
-                        <p class="d-inline-flex bg-dark text-primary py-1 px-4 me-auto">Working Hours</p>
-                        <h1 class="text-uppercase mb-4">Professional Barbers Are Waiting For You</h1>
+                        <p class="d-inline-flex bg-dark text-primary py-1 px-4 me-auto">Product Overview</p>
+                        <h1 class="text-uppercase mb-4">Discover the Excellence of Our Service</h1>
                         <div>
                             <div class="d-flex justify-content-between border-bottom py-2">
-                                <h6 class="text-uppercase mb-0">Monday</h6>
-                                <span class="text-uppercase">09 AM - 09 PM</span>
+                                <h6 class="text-uppercase mb-0">Material</h6>
+                                <span class="text-uppercase">Non-Stick Aluminum</span>
                             </div>
                             <div class="d-flex justify-content-between border-bottom py-2">
-                                <h6 class="text-uppercase mb-0">Tuesday</h6>
-                                <span class="text-uppercase">09 AM - 09 PM</span>
+                                <h6 class="text-uppercase mb-0">Diameter</h6>
+                                <span class="text-uppercase">28 cm</span>
                             </div>
                             <div class="d-flex justify-content-between border-bottom py-2">
-                                <h6 class="text-uppercase mb-0">Wednesday</h6>
-                                <span class="text-uppercase">09 AM - 09 PM</span>
+                                <h6 class="text-uppercase mb-0">Coating</h6>
+                                <span class="text-uppercase">3-Layer Non-Stick Coating</span>
                             </div>
                             <div class="d-flex justify-content-between border-bottom py-2">
-                                <h6 class="text-uppercase mb-0">Thursday</h6>
-                                <span class="text-uppercase">09 AM - 09 PM</span>
+                                <h6 class="text-uppercase mb-0">Handle</h6>
+                                <span class="text-uppercase">Heat-Resistant Bakelite</span>
                             </div>
                             <div class="d-flex justify-content-between border-bottom py-2">
-                                <h6 class="text-uppercase mb-0">Friday</h6>
-                                <span class="text-uppercase">09 AM - 09 PM</span>
+                                <h6 class="text-uppercase mb-0">Weight</h6>
+                                <span class="text-uppercase">1.1 kg</span>
                             </div>
                             <div class="d-flex justify-content-between py-2">
-                                <h6 class="text-uppercase mb-0">Sat / Sun</h6>
-                                <span class="text-uppercase text-primary">Closed</span>
+                                <h6 class="text-uppercase mb-0">Color</h6>
+                                <span class="text-uppercase ">Matte Black</span>
                             </div>
                         </div>
                     </div>
@@ -515,9 +539,8 @@
     </div>
     <!-- Working Hours End -->
 
-
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5 d-none">
+    <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <p class="d-inline-block bg-secondary text-primary py-1 px-4">Testimonial</p>
@@ -525,28 +548,27 @@
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-1.jpg' alt=''>">
-                    <h4 class="text-uppercase">Client Name</h4>
+                    <h4 class="text-uppercase">Ayush</h4>
                     <p class="text-primary">Profession</p>
-                    <span class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</span>
+                    <span class="fs-5">I’m really impressed with the quality of the products from Nagina Home Appliance. They work perfectly and look great in my home</span>
                 </div>
                 <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-2.jpg' alt=''>">
-                    <h4 class="text-uppercase">Client Name</h4>
+                    <h4 class="text-uppercase">Kulldeep</h4>
                     <p class="text-primary">Profession</p>
-                    <span class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</span>
+                    <span class="fs-5">"The customer service at Nagina Home Appliance was top-notch. They were quick to respond and helped me with all my concerns.</span>
                 </div>
                 <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-3.jpg' alt=''>">
-                    <h4 class="text-uppercase">Client Name</h4>
+                    <h4 class="text-uppercase">Raju</h4>
                     <p class="text-primary">Profession</p>
-                    <span class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</span>
+                    <span class="fs-5">I highly recommend Nagina Home Appliance. The products are reliable, affordable, and truly enhance the functionality of my home</span>
                 </div>
-            </div>      
+            </div>  
         </div>
     </div>
     <!-- Testimonial End -->
 
-
     <!-- Footer Start -->
-    <div class="d-none container-fluid bg-secondary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid bg-secondary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6">
@@ -555,13 +577,13 @@
                         <div class="btn-square bg-dark flex-shrink-0 me-3">
                             <span class="fa fa-map-marker-alt text-primary"></span>
                         </div>
-                        <span>123 Street, New York, USA</span>
+                        <span>Plot No. 12, SHED- 196, Ground Floor, Block - A Master Mohalla, Libaspur, Delhi - 110042, India </span>
                     </div>
                     <div class="d-flex align-items-center mb-2">
                         <div class="btn-square bg-dark flex-shrink-0 me-3">
                             <span class="fa fa-phone-alt text-primary"></span>
                         </div>
-                        <span>+012 345 67890</span>
+                        <span>08045479689</span>
                     </div>
                     <div class="d-flex align-items-center">
                         <div class="btn-square bg-dark flex-shrink-0 me-3">
@@ -597,17 +619,26 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+                        &copy; <a class="border-bottom" href="#">Nagina</a>, All Right Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        Designed By <a class="border-bottom" href="https://viraladsmedia.com">viraladsmedia</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Footer End -->
+
+    <!-- This is the whatsapp section -->
+    <div class="position-relative">
+        <a class="call" href="tel:+1234567890"><i class="bi bi-telephone"></i></a>
+        <a class="whatsapp"
+            href="https://api.whatsapp.com/send/?phone=934545454491934&text&type=phone_number&app_absent=0"><i
+                class="bi bi-whatsapp"></i></a>
+    </div>
+     <!-- End whatsapp section -->
 
 
     <!-- Back to Top -->
@@ -624,6 +655,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!-- End javascript Template -->
 </body>
 
 </html>
