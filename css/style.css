@@ -166,7 +166,8 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: url('https://img.freepik.com/free-photo/close-up-air-fryer_23-2151723419.jpg?ga=GA1.1.332943406.1726205077&semt=ais_hybrid') center center no-repeat;
+    /* background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url(../img/carousel-1.jpg) center center no-repeat; */
     background-size: cover;
 }
 
