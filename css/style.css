@@ -450,7 +450,7 @@
     @media (min-width: 992px) {
         .carousel-item img {
             height: 83vh;
-            object-fit: cover; /* Ensures the image fits nicely */
+            object-fit: fill; /* Ensures the image fits nicely */
         }
     }
 
