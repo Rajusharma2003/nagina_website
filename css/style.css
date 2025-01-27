@@ -4,6 +4,7 @@
     --secondary: #191C24;
     --light: #6C7293;
     --dark: #191C24;
+    --miwhite : #d4d0d0;
 }
 
 .back-to-top {
@@ -428,11 +429,11 @@
 }
 
 .container.quote .quote-text {
-    background: #000000;
+    background: #ffffff;
 }
 
 .container.quote .quote-form {
-    background: #000000;
+    background: #ffffff;
 }
 
 .container.quote .quote-text .h-100,
@@ -449,8 +450,8 @@
     /* Apply 83vh height for large screens */
     @media (min-width: 992px) {
         .carousel-item img {
-            height: 83vh;
-            object-fit: fill; /* Ensures the image fits nicely */
+            height: 100vh;
+            object-fit: cover; /* Ensures the image fits nicely */
         }
     }
 
