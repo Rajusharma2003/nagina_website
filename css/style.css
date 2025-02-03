@@ -79,9 +79,13 @@
     color: var(--light);
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     outline: none;
+}
+
+.navbar .navbar-nav .nav-link.italic {
+    font-style: italic;
 }
 
 .navbar .navbar-nav .nav-link:hover,
