@@ -85,7 +85,7 @@
 }
 
 .navbar .navbar-nav .nav-link.italic {
-    font-style: normal;
+    font-style: italic;
 }
 
 .navbar .navbar-nav .nav-link:hover,
