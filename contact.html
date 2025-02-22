@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>HairCut - Hair Salon HTML Template</title>
+    <title>nagina</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -32,6 +32,7 @@
 </head>
 
 <body>
+
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -40,81 +41,90 @@
     </div>
     <!-- Spinner End -->
 
+       <!-- Topbar Start -->
+       <div class="container-fluid bg-body px-0">
+        <div class="row g-0 d-none d-lg-flex">
+            <div class="col-lg-6 ps-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center text-white">
+                    <span class="">Follow Us:</span>
+                    <a class="btn btn-link" style="color: #0A67FF;" href="https://www.facebook.com/naginacookware"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-info" style="color: #0077B5;" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-link text-primary" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-link text-danger" href="https://www.instagram.com/naginacookware_/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-end">
+                <div class="h-100 topbar-right d-inline-flex align-items-center text-white py-2 px-5">
+                    <span class=" fw-bold me-2"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
+                    <span class=" fw-bold">+9108045479689</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
 
     <!-- Navbar Start -->
-    <nav
-      class="navbar navbar-expand-lg bg-secondary navbar-dark py-lg-0 px-lg-5 wow fadeIn"
-      data-wow-delay="0.1s">
-      <div class="col-md-6 col-5 mt-1">
-        <a href="index.html" class="navbar-brand ms-2 ms-lg-0">
-          <!-- <h1 class="mb-0 text-primary text-uppercase">logo</h1> -->
-          <img
-            class="img-fluid col-md-2 col-3 position-absolute top-0"
-            style="z-index: 999"
-            src="img/nlogo.png"
-            alt="logo"
-          />
-        </a>
-      </div>
-      <button
-        type="button"
-        class="navbar-toggler me-4"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-          <a href="index.html" class="nav-item nav-link active">Home</a>
-          <!-- <a href="#" class="nav-item nav-link">product</a> -->
-          <div class="nav-item dropdown">
-            <a
-              href="product.html"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Category</a>
-            <div class="dropdown-menu m-0">
-              <a href="HammerProdcut.html" class="dropdown-item">HAMMER SERIES</a>
-              <a href="BLACKHAWK.html" class="dropdown-item">BLACK HAWK SERIES</a>
-              <a href="SS_SMART.html" class="dropdown-item">SS SMART SERIES</a>
-              <a href="OILFREE_SERIES.html" class="dropdown-item">OIL FREE SERIES</a>
-              <a href="#" class="dropdown-item">ANTIQUE SERIES</a>
-              <a href="TRI_COOKS.html" class="dropdown-item">TRI COOK SERIES</a>
-          </div>
-          </div>
-          <a href="about.html" class="nav-item nav-link">about</a>
-          <a href="#" class="nav-item nav-link">Contact</a>
-          <a href="blog.html" class="nav-item nav-link">Blog</a>
+    <nav style="z-index: 99;" class="w-100 navbar bg-white navbar-expand-lg  navbar-dark  py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="col-md-6 col-5 mt-1">
+            <a href="index.html" class="navbar-brand ms-2 ms-lg-0">
+                <!-- <h1 class="mb-0 text-primary text-uppercase">logo</h1> -->
+                 <img class="img-fluid col-md-2 col-3 position-absolute top-0 " style="z-index: 999;" src="img/nlogo.png" alt="logo">
+            </a>                    
         </div>
-        <a
-          href="#"
-          class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block"
-          >Contact Us<i class="fa fa-arrow-right ms-3"></i
-        ></a>
-      </div>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active" style="font-style: normal;">HOME</a>
+                <!-- <a href="product.html" class="nav-item nav-link">product</a> -->
+                <!-- <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle italic active" data-bs-toggle="dropdown">Category</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="HammerProdcut.html" class="dropdown-item">HAMMER SERIES</a>
+                        <a href="BLACKHAWK.html" class="dropdown-item">BLACK HAWK SERIES</a>
+                        <a href="SS_SMART.html" class="dropdown-item">SS SMART SERIES</a>
+                        <a href="OILFREE_SERIES.html" class="dropdown-item">OIL FREE SERIES</a>
+                        <a href="AntiqueSeries.html" class="dropdown-item">ANTIQUE SERIES</a>
+                        <a href="TRI_COOKS.html" class="dropdown-item">TRI COOK SERIES</a>
+                    </div>
+                </div> -->
+                <a href="AntiqueSeries.html" class="nav-item nav-link  active text-uppercase" style="font-style: normal;">Aluminium</a>
+                <a href="OILFREE_SERIES.html" class="nav-item nav-link  active text-uppercase" style="font-style: normal;">Non Stick</a>
+                <a href="BLACKHAWK.html" class="nav-item nav-link  active text-uppercase" style="font-style: normal;">Hard Anodised</a>
+                <a href="SS_SMART.html" class="nav-item nav-link  active text-uppercase" style="font-style: normal;">stainless Steel</a>
+                <a href="TRI_COOKS.html" class="nav-item nav-link  active text-uppercase" style="font-style: normal;">Tri ply stainless Steel</a>
+                <a href="HammerProdcut.html" class="nav-item nav-link  active text-uppercase" style="font-style: normal;">Pressure Cooker</a>
+                <a href="#" class="nav-item nav-link  active text-uppercase" style="font-style: normal;">Contact</a>
+                <!-- <a href="about.html" class="nav-item nav-link italic active">About</a> -->
+                <!-- <a href="contact.html" class="nav-item nav-link italic active">Contact</a> -->
+                <!-- <a href="blog.html" class="nav-item nav-link italic active">Blog</a> -->
+            </div>
+            <!-- <a href="https://api.whatsapp.com/send/?phone=934545454491934&text&type=phone_number&app_absent=0https://api.whatsapp.com/send/?phone=934545454491934&text&type=phone_number&app_absent=0" class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block ">Contact Us<i class="fa fa-arrow-right ms-3"></i></a> -->
+        </div>
     </nav>
     <!-- Navbar End -->
 
 
     <!-- Page Header Start -->
-    <!-- <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
-            <h1 class="display-3 text-white text-uppercase mb-3 animated slideInDown">Contact</h1>
+            <h1 class="display-3 text-dark text-uppercase mb-3 animated slideInDown">Contact</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center text-uppercase mb-0">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item"><a class="text-dark" href="#">Home</a></li>
                     <li class="breadcrumb-item text-primary active" aria-current="page">Contact</li>
                 </ol>
             </nav>
         </div>
-    </div> -->
+    </div>
     <!-- Page Header End -->
 
     <!-- Banner section -->
-    <section class="image-section">
+    <!-- <section class="image-section">
         <img src="img/subbanner.jpg" alt="Cooking Products" class="w-100" />
-    </section>
+    </section> -->
     <!-- Banner section -->
 
 
@@ -244,8 +254,8 @@
     <div class="position-relative">
         <a class="call" href="tel:+1234567890"><i class="bi bi-telephone"></i></a>
         <a class="whatsapp"
-            href="https://api.whatsapp.com/send/?phone=934545454491934&text&type=phone_number&app_absent=0"><i
-                class="bi bi-whatsapp"></i></a>
+        href="https://api.whatsapp.com/send/?phone=934545454491934&text&type=phone_number&app_absent=0"><i
+        class="bi bi-whatsapp"></i></a>
     </div>
      <!-- End whatsapp section -->
 

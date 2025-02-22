@@ -41,64 +41,70 @@
 
   <body>
     <!-- Spinner Start -->
-    <!-- <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
-    </div> -->
+    </div>
     <!-- Spinner End -->
 
+       <!-- Topbar Start -->
+       <div class="container-fluid bg-body px-0">
+        <div class="row g-0 d-none d-lg-flex">
+            <div class="col-lg-6 ps-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center text-white">
+                    <span class="">Follow Us:</span>
+                    <a class="btn btn-link" style="color: #0A67FF;" href="https://www.facebook.com/naginacookware"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-info" style="color: #0077B5;" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-link text-primary" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-link text-danger" href="https://www.instagram.com/naginacookware_/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-end">
+                <div class="h-100 topbar-right d-inline-flex align-items-center text-white py-2 px-5">
+                    <span class=" fw-bold me-2"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
+                    <span class=" fw-bold">+9108045479689</span>
+                </div>
+            </div>
+        </div>
+       </div>
+      <!-- Topbar End -->
+
     <!-- Navbar Start -->
-    <nav
-      class="navbar navbar-expand-lg bg-secondary navbar-dark py-lg-0 px-lg-5 wow fadeIn"
-      data-wow-delay="0.1s">
+    <nav style="z-index: 99;" class="w-100 navbar bg-white navbar-expand-lg  navbar-dark  py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s"> 
       <div class="col-md-6 col-5 mt-1">
-        <a href="index.html" class="navbar-brand ms-2 ms-lg-0">
-          <!-- <h1 class="mb-0 text-primary text-uppercase">logo</h1> -->
-          <img
-            class="img-fluid col-md-2 col-3 position-absolute top-0"
-            style="z-index: 999"
-            src="img/nlogo.png"
-            alt="logo"
-          />
-        </a>
+          <a href="index.html" class="navbar-brand ms-2 ms-lg-0">
+              <!-- <h1 class="mb-0 text-primary text-uppercase">logo</h1> -->
+               <img class="img-fluid col-md-2 col-3 position-absolute top-0 " style="z-index: 999;" src="img/nlogo.png" alt="logo">
+          </a>                    
       </div>
-      <button
-        type="button"
-        class="navbar-toggler me-4"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
+      <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-          <a href="index.html" class="nav-item nav-link active">Home</a>
-          <!-- <a href="#" class="nav-item nav-link">product</a> -->
-          <div class="nav-item dropdown">
-            <a
-              href="product.html"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Category</a
-            >
-            <div class="dropdown-menu m-0">
-              <a href="HammerProdcut.html" class="dropdown-item">HAMMER SERIES</a>
-              <a href="BLACKHAWK.html" class="dropdown-item">BLACK HAWK SERIES</a>
-              <a href="SS_SMART.html" class="dropdown-item">SS SMART SERIES</a>
-              <a href="OILFREE_SERIES.html" class="dropdown-item">OIL FREE SERIES</a>
-              <a href="#" class="dropdown-item">ANTIQUE SERIES</a>
-              <a href="TRI_COOKS.html" class="dropdown-item">TRI COOK SERIES</a>
+          <div class="navbar-nav ms-auto p-4 p-lg-0">
+              <a href="index.html" class="nav-item nav-link active" style="font-style: normal;">HOME</a>
+              <!-- <a href="product.html" class="nav-item nav-link">product</a> -->
+              <!-- <div class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle italic active" data-bs-toggle="dropdown">Category</a>
+                  <div class="dropdown-menu m-0">
+                      <a href="HammerProdcut.html" class="dropdown-item">HAMMER SERIES</a>
+                      <a href="BLACKHAWK.html" class="dropdown-item">BLACK HAWK SERIES</a>
+                      <a href="SS_SMART.html" class="dropdown-item">SS SMART SERIES</a>
+                      <a href="OILFREE_SERIES.html" class="dropdown-item">OIL FREE SERIES</a>
+                      <a href="AntiqueSeries.html" class="dropdown-item">ANTIQUE SERIES</a>
+                      <a href="TRI_COOKS.html" class="dropdown-item">TRI COOK SERIES</a>
+                  </div>
+              </div> -->
+              <a href="#" class="nav-item nav-link  active text-uppercase" style="font-style: normal;">Aluminium</a>
+              <a href="OILFREE_SERIES.html" class="nav-item nav-link  active text-uppercase" style="font-style: normal;">Non Stick</a>
+              <a href="HammerProdcut.html" class="nav-item nav-link  active text-uppercase" style="font-style: normal;">Hard Anodised</a>
+              <a href="SS_SMART.html" class="nav-item nav-link  active text-uppercase" style="font-style: normal;">stainless Steel</a>
+              <a href="TRI_COOKS.html" class="nav-item nav-link  active text-uppercase" style="font-style: normal;">Tri ply stainless Steel</a>
+              <a href="HammerProdcut.html" class="nav-item nav-link  active text-uppercase" style="font-style: normal;">Pressure Cooker</a>
+              <a href="contact.html" class="nav-item nav-link  active text-uppercase" style="font-style: normal;">Contact</a>
           </div>
-          </div>
-          <a href="about.html" class="nav-item nav-link">about</a>
-          <a href="contact.html" class="nav-item nav-link">Contact</a>
-          <a href="blog.html" class="nav-item nav-link">Blog</a>
-        </div>
-        <a
-          href="#"
-          class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block"
-          >Contact Us<i class="fa fa-arrow-right ms-3"></i
-        ></a>
+          <!-- <a href="https://api.whatsapp.com/send/?phone=934545454491934&text&type=phone_number&app_absent=0https://api.whatsapp.com/send/?phone=934545454491934&text&type=phone_number&app_absent=0" class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block ">Contact Us<i class="fa fa-arrow-right ms-3"></i></a> -->
       </div>
     </nav>
     <!-- Navbar End -->
@@ -135,221 +141,187 @@
     </section>
     <!-- End sub banner section -->
 
-    <!-- This is the second card -->
-    <div class="card mb-3" style="max-width: 100%; margin: 20px; border-radius: 15px;  overflow: hidden;">
-      <div class="row g-0 justify-content-center align-items-center">
-        <div class="col-md-4">
-          <img
-            src="img/product/p21.png"
-            class="img-fluid col-md-8 rounded-start"
-            alt="Card title"
-          />
-        </div>
-        <div class="col-md-7">
-          <div class="card-body">
-            <h5 class="card-title text-dark">Hard Anodised Taper Frypan</h5>
-            <p class="card-text">
-                The Hard Anodised Taper Frypan is a versatile and durable cookware essential, designed to elevate your everyday cooking experience. Made with advanced hard anodised technology, this frypan combines durability with superior heat conduction for evenly cooked meals.            </p>
-            <p class="card-text">
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Metal Type</span> : Stainless Steel,</small>&nbsp <br>
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Material</span> : Metal,</small>&nbsp <br>
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Bottom</span> : Full Impacted Bottom,</small>&nbsp <br>
-            </p>
-            <button class="btn bg-primary text-white" style="border-bottom-right-radius: 10px; border-top-left-radius: 10px;">Inquiry Now</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- This is the third card -->
-    <div class="card mb-3" style="max-width: 100%; margin: 20px; border-radius: 15px; overflow: hidden;">
-      <div class="row g-0 justify-content-center align-items-center">
-        <div class="col-md-4">
-          <img
-            src="img/product/p5.png"
-            class="img-fluid col-md-8 rounded-start"
-            alt="Card title"
-          />
+    <!-- product section Start -->
+    <div class="container-xxl py-5 text-dark" >
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <p class="d-inline-block bg-secondary text-primary py-1 px-4">Our Product</p>
+            <h1 class="text-uppercase text-dark">Our Product</h1>
         </div>
-        <div class="col-md-7">
-          <div class="card-body">
-            <h5 class="card-title text-dark">Non Stick Tadka Pan</h5>
-            <p class="card-text">
-                A Non-Stick Dosa Tawa is a must-have kitchen essential designed for making perfect, evenly cooked dosas, crepes, pancakes, and more. Crafted with a high-quality non-stick coating, it ensures minimal use of oil, promoting healthy cooking and easy food release.
-            </p>
-            <p class="card-text">
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Metal Type</span> : Stainless Steel,</small>&nbsp <br>
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Material</span> : Metal,</small>&nbsp <br>
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Bottom</span> : Full Impacted Bottom,</small>&nbsp <br>
-            </p>
-            <button class="btn bg-primary text-white" style="border-bottom-right-radius: 10px; border-top-left-radius: 10px;">Inquiry Now</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- This is the fourth card -->
-    <div class="card mb-3" style="max-width: 100%; margin: 20px; border-radius: 15px; overflow: hidden;">
-      <div class="row g-0 justify-content-center align-items-center">
-        <div class="col-md-4">
-          <img
-            src="img/product/35.png"
-            class="img-fluid col-md-8 rounded-start"
-            alt="Card title"
-          />
+    <!-- This is the first card section -->
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <!-- Card 1 -->
+                <div class="team-item">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/product/p1.png" alt="" 
+                            style="transition: transform 0.5s ease-in-out; will-change: transform;" 
+                            onmouseover="this.style.transform='scale(1.05)'" 
+                            onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div class="bg-secondary text-start p-4">
+                        <h5 class="text-uppercase">product : cooker</h5>
+                        <a href="#">
+                        <button class="btn text-white w-75" style="background-color: red; border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
+                        onmouseover="this.style.transform='scale(1.05)'" 
+                        onmouseout="this.style.transform='scale(1)'">Inquiry</button>
+                        </a>
+                        <!-- <span class="text-primary">Designation</span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <!-- Card 2 -->
+                <div class="team-item">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/product/p2.png" alt="" 
+                            style="transition: transform 0.5s ease-in-out; will-change: transform;" 
+                            onmouseover="this.style.transform='scale(1.05)'" 
+                            onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div class="bg-secondary text-start p-4">
+                        <h5 class="text-uppercase">product : cooker</h5>
+                        <a href="#">
+                        <button class="btn  text-white w-75" style="background-color: red; border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
+                        onmouseover="this.style.transform='scale(1.05)'" 
+                        onmouseout="this.style.transform='scale(1)'">Inquiry</button>
+                        </a>
+                        <!-- <span class="text-primary">Designation</span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <!-- Card 3 -->
+                <div class="team-item">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/product/p3.png" alt="" 
+                            style="transition: transform 0.5s ease-in-out; will-change: transform;" 
+                            onmouseover="this.style.transform='scale(1.05)'" 
+                            onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div class="bg-secondary text-start p-4">
+                        <h5 class="text-uppercase">product : cooker</h5>
+                        <a href="#">
+                        <button class="btn  text-white w-75" style="background-color: red; border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
+                        onmouseover="this.style.transform='scale(1.05)'" 
+                        onmouseout="this.style.transform='scale(1)'">Inquiry</button>
+                        </a>
+                        <!-- <span class="text-primary">Designation</span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <!-- Card 4 -->
+                <div class="team-item">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/product/p20.png" alt="" 
+                            style="transition: transform 0.5s ease-in-out; will-change: transform;" 
+                            onmouseover="this.style.transform='scale(1.05)'" 
+                            onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div class="bg-secondary text-start p-4">
+                        <h5 class="text-uppercase">product : cooker</h5>
+                        <a href="#">
+                        <button class="btn  text-white w-75" style="background-color: red; border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
+                        onmouseover="this.style.transform='scale(1.05)'" 
+                        onmouseout="this.style.transform='scale(1)'">Inquiry</button>
+                        </a>
+                        <!-- <span class="text-primary">Designation</span> -->
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-7">
-          <div class="card-body">
-            <h5 class="card-title text-dark">Non Stick Stock Pot</h5>
-            <p class="card-text">
-                A Non-Stick Dosa Tawa is a must-have kitchen essential designed for making perfect, evenly cooked dosas, crepes, pancakes, and more. Crafted with a high-quality non-stick coating, it ensures minimal use of oil, promoting healthy cooking and easy food release.
-            </p>
-            <p class="card-text">
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Metal Type</span> : Stainless Steel,</small>&nbsp <br>
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Material</span> : Metal,</small>&nbsp <br>
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Bottom</span> : Full Impacted Bottom,</small>&nbsp <br>
-            </p>
-            <button class="btn bg-primary text-white" style="border-bottom-right-radius: 10px; border-top-left-radius: 10px;">Inquiry Now</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- This is the fifth card -->
-    <div class="card mb-3" style="max-width: 100%; margin: 20px; border-radius: 15px; overflow: hidden;">
-      <div class="row g-0 justify-content-center align-items-center">
-        <div class="col-md-4">
-          <img
-            src="img/product/p36.png"
-            class="img-fluid col-md-8 rounded-start"
-            alt="Card title"
-          />
+    <!-- This is the second line of the product -->
+        <div class="row g-4 mt-4">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <!-- Card 5 -->
+                <div class="team-item">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/product/p7.png" alt="" 
+                            style="transition: transform 0.5s ease-in-out; will-change: transform;" 
+                            onmouseover="this.style.transform='scale(1.05)'" 
+                            onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div class="bg-secondary text-start p-4">
+                        <h5 class="text-uppercase">product : cooker</h5>
+                        <a href="#">
+                        <button class="btn  text-white w-75" style="background-color: red; border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
+                        onmouseover="this.style.transform='scale(1.05)'" 
+                        onmouseout="this.style.transform='scale(1)'">Inquiry</button>
+                        </a>
+                        <!-- <span class="text-primary">Designation</span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <!-- Card 6 -->
+                <div class="team-item">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/product/p29.png" alt="" 
+                            style="transition: transform 0.5s ease-in-out; will-change: transform;" 
+                            onmouseover="this.style.transform='scale(1.05)'" 
+                            onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div class="bg-secondary text-start p-4">
+                        <h5 class="text-uppercase">product : cooker</h5>
+                        <a href="#">
+                        <button class="btn  text-white w-75" style="background-color: red; border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
+                        onmouseover="this.style.transform='scale(1.05)'" 
+                        onmouseout="this.style.transform='scale(1)'">Inquiry</button>
+                        </a>
+                        <!-- <span class="text-primary">Designation</span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <!-- Card 7 -->
+                <div class="team-item">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/product/P43.png" alt="" 
+                            style="transition: transform 0.5s ease-in-out; will-change: transform;" 
+                            onmouseover="this.style.transform='scale(1.05)'" 
+                            onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div class="bg-secondary text-start p-4">
+                        <h5 class="text-uppercase">product : cooker</h5>
+                        <a href="#">
+                        <button class="btn  text-white w-75" style="background-color: red; border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
+                        onmouseover="this.style.transform='scale(1.05)'" 
+                        onmouseout="this.style.transform='scale(1)'">Inquiry</button>
+                        </a>
+                        <!-- <span class="text-primary">Designation</span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <!-- Card 8 -->
+                <div class="team-item">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/product/P14.png" alt="" 
+                            style="transition: transform 0.5s ease-in-out; will-change: transform;" 
+                            onmouseover="this.style.transform='scale(1.05)'" 
+                            onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div class="bg-secondary text-start p-4">
+                        <h5 class="text-uppercase">product : cooker</h5>
+                        <a href="#">
+                        <button class="btn  text-white w-75" style="background-color: red; border-radius: 10px; "transition: transform 0.5s ease-in-out; will-change: transform;" 
+                        onmouseover="this.style.transform='scale(1.05)'" 
+                        onmouseout="this.style.transform='scale(1)'">Inquiry</button>
+                        </a>
+                        <!-- <span class="text-primary">Designation</span> -->
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-7">
-          <div class="card-body">
-            <h5 class="card-title text-dark">Nonstick Handi</h5>
-            <p class="card-text">
-                A Non-Stick Dosa Tawa is a must-have kitchen essential designed for making perfect, evenly cooked dosas, crepes, pancakes, and more. Crafted with a high-quality non-stick coating, it ensures minimal use of oil, promoting healthy cooking and easy food release.
-            </p>
-            <p class="card-text">
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Metal Type</span> : Stainless Steel,</small>&nbsp <br>
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Material</span> : Metal,</small>&nbsp <br>
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Bottom</span> : Full Impacted Bottom,</small>&nbsp <br>
-            </p>
-            <button class="btn bg-primary text-white" style="border-bottom-right-radius: 10px; border-top-left-radius: 10px;">Inquiry Now</button>
-          </div>
-        </div>
-      </div>
+        <!-- End second line  -->
     </div>
-
-    <!-- This is the sixth card -->
-    <div class="card mb-3" style="max-width: 100%; margin: 20px; border-radius: 15px; overflow: hidden;">
-      <div class="row g-0 justify-content-center align-items-center">
-        <div class="col-md-4">
-          <img
-            src="img/product/p37.png"
-            class="img-fluid col-md-8 rounded-start"
-            alt="Card title"
-          />
-        </div>
-        <div class="col-md-7">
-          <div class="card-body">
-            <h5 class="card-title text-dark">Nonstick Tawa</h5>
-            <p class="card-text">
-                A Non-Stick Dosa Tawa is a must-have kitchen essential designed for making perfect, evenly cooked dosas, crepes, pancakes, and more. Crafted with a high-quality non-stick coating, it ensures minimal use of oil, promoting healthy cooking and easy food release.
-            </p>
-            <p class="card-text">
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Metal Type</span> : Stainless Steel,</small>&nbsp <br>
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Material</span> : Metal,</small>&nbsp <br>
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Bottom</span> : Full Impacted Bottom,</small>&nbsp <br>
-            </p>
-            <button class="btn bg-primary text-white" style="border-bottom-right-radius: 10px; border-top-left-radius: 10px;">Inquiry Now</button>
-          </div>
-        </div>
-      </div>
     </div>
-
-    <!-- This is the seventh card -->
-    <div class="card mb-3" style="max-width: 100%; margin: 20px; border-radius: 15px; overflow: hidden;">
-      <div class="row g-0 justify-content-center align-items-center">
-        <div class="col-md-4">
-          <img
-            src="img/product/p38.png"
-            class="img-fluid col-md-8 rounded-start"
-            alt="Card title"
-          />
-        </div>
-        <div class="col-md-7">
-          <div class="card-body">
-            <h5 class="card-title text-dark">Non Stick Fry Pan</h5>
-            <p class="card-text">
-                A Non-Stick Dosa Tawa is a must-have kitchen essential designed for making perfect, evenly cooked dosas, crepes, pancakes, and more. Crafted with a high-quality non-stick coating, it ensures minimal use of oil, promoting healthy cooking and easy food release.
-            </p>
-            <p class="card-text">
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Metal Type</span> : Stainless Steel,</small>&nbsp <br>
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Material</span> : Metal,</small>&nbsp <br>
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Bottom</span> : Full Impacted Bottom,</small>&nbsp <br>
-            </p>
-            <button class="btn bg-primary text-white" style="border-bottom-right-radius: 10px; border-top-left-radius: 10px;">Inquiry Now</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- this is the Eights -->
-    <div class="card mb-3" style="max-width: 100%; margin: 20px; border-radius: 15px; overflow: hidden;">
-      <div class="row g-0 justify-content-center align-items-center">
-        <div class="col-md-4">
-          <img
-            src="img/product/p39.png"
-            class="img-fluid col-md-8 rounded-start"
-            alt="Card title"
-          />
-        </div>
-        <div class="col-md-7">
-          <div class="card-body">
-            <h5 class="card-title text-dark">Nonstick Karahi</h5>
-            <p class="card-text">
-                A Non-Stick Dosa Tawa is a must-have kitchen essential designed for making perfect, evenly cooked dosas, crepes, pancakes, and more. Crafted with a high-quality non-stick coating, it ensures minimal use of oil, promoting healthy cooking and easy food release.
-            </p>
-            <p class="card-text">
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Metal Type</span> : Stainless Steel,</small>&nbsp <br>
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Material</span> : Metal,</small>&nbsp <br>
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Bottom</span> : Full Impacted Bottom,</small>&nbsp <br>
-            </p>
-            <button class="btn bg-primary text-white" style="border-bottom-right-radius: 10px; border-top-left-radius: 10px;">Inquiry Now</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- product section End -->
-    <!-- this is the Eights -->
-    <div class="card mb-3" style="max-width: 100%; margin: 20px; border-radius: 15px; overflow: hidden;">
-      <div class="row g-0 justify-content-center align-items-center">
-        <div class="col-md-4">
-          <img
-            src="img/product/p40.png"
-            class="img-fluid col-md-8 rounded-start"
-            alt="Card title"
-          />
-        </div>
-        <div class="col-md-7">
-          <div class="card-body">
-            <h5 class="card-title text-dark">Nonstick Karahi</h5>
-            <p class="card-text">
-                A Non-Stick Dosa Tawa is a must-have kitchen essential designed for making perfect, evenly cooked dosas, crepes, pancakes, and more. Crafted with a high-quality non-stick coating, it ensures minimal use of oil, promoting healthy cooking and easy food release.
-            </p>
-            <p class="card-text">
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Metal Type</span> : Stainless Steel,</small>&nbsp <br>
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Material</span> : Metal,</small>&nbsp <br>
-              <small class="text-muted"><span style="font-weight: 700; color: black;">Bottom</span> : Full Impacted Bottom,</small>&nbsp <br>
-            </p>
-            <button class="btn bg-primary text-white" style="border-bottom-right-radius: 10px; border-top-left-radius: 10px;">Inquiry Now</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- product section End -->
-
+    <!-- product section Team End -->  
+    
 
     <!-- Testimonial Start -->
     <div class="container-xxl py-5">
@@ -376,7 +348,7 @@
               </div>
           </div>  
       </div>
-  </div>
+    </div>
   <!-- Testimonial End -->
 
     <!-- Footer Start -->
@@ -441,16 +413,16 @@
               </div>
           </div>
       </div>
-  </div>
+    </div>
     <!-- Footer End -->
 
      <!-- This is the whatsapp section -->
      <div class="position-relative">
       <a class="call" href="tel:+1234567890"><i class="bi bi-telephone"></i></a>
       <a class="whatsapp"
-          href="https://api.whatsapp.com/send/?phone=934545454491934&text&type=phone_number&app_absent=0"><i
-              class="bi bi-whatsapp"></i></a>
-  </div>
+        href="https://api.whatsapp.com/send/?phone=934545454491934&text&type=phone_number&app_absent=0"><i
+        class="bi bi-whatsapp"></i></a>
+    </div>    
    <!-- End whatsapp section -->
 
     
