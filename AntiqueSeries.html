@@ -37,6 +37,176 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+
+     <!-- This is css -->
+     <style>
+        .section-wide > [class*="container"] {
+        width: 100% !important;
+        max-width: none !important;
+        padding-left: 100px;
+        padding-right: 100px;
+        }
+    
+    @media only screen and (min-width: 1200px) and (max-width: 1499px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+      .section-wide > [class*="container"] {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+    
+    @media only screen and (max-width: 767px) {
+      .section-wide > [class*="container"] {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+    
+    
+    /*Section Spacing*/
+    .section-padding {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    
+    @media only screen and (min-width: 1200px) and (max-width: 1499px), only screen and (min-width: 992px) and (max-width: 1199px) {
+      .section-padding {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+    }
+    
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .section-padding {
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+    }
+    
+    @media only screen and (max-width: 767px) {
+      .section-padding {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+    }
+    
+    .banner {
+      height: 100%;
+    }
+    
+    .banner a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+    }
+    
+    .banner a::before {
+      background-color: rgba(255, 255, 255, 0.2);
+      content: "";
+      height: 200%;
+      left: -280px;
+      position: absolute;
+      top: -50%;
+      -webkit-transform: rotate(35deg);
+      -ms-transform: rotate(35deg);
+          transform: rotate(35deg);
+      -webkit-transition: all 1.25s cubic-bezier(0.19, 1, 0.22, 1);
+      -o-transition: all 1.25s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: all 1.25s cubic-bezier(0.19, 1, 0.22, 1);
+      width: 80px;
+      z-index: 1;
+    }
+    
+    .banner a::after {
+      background-color: rgba(255, 255, 255, 0.2);
+      content: "";
+      height: 200%;
+      left: 180%;
+      position: absolute;
+      top: -50%;
+      -webkit-transform: rotate(35deg);
+      -ms-transform: rotate(35deg);
+          transform: rotate(35deg);
+      -webkit-transition: all 1.25s cubic-bezier(0.19, 1, 0.22, 1);
+      -o-transition: all 1.25s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: all 1.25s cubic-bezier(0.19, 1, 0.22, 1);
+      width: 80px;
+      z-index: 1;
+    }
+    
+    .banner a:hover::before {
+      left: 180%;
+      -webkit-transition: all 1.25s cubic-bezier(0.19, 1, 0.22, 1);
+      -o-transition: all 1.25s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: all 1.25s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    
+    .banner a:hover::after {
+      left: -280px;
+      -webkit-transition: all 1.25s cubic-bezier(0.19, 1, 0.22, 1);
+      -o-transition: all 1.25s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: all 1.25s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    
+    .banner a:hover img {
+      -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+              transform: scale(1.05);
+    }
+    
+    .banner a img {
+      width: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      height: 100%;
+    }
+    
+    
+    body {
+        font-style: italic;
+        font-family: 'Lobster', cursive;
+        font-weight: bold;
+    }
+
+
+    /* This is the view product button */
+    .image-container {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.image-container img {
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-container:hover img {
+    transform: scale(1.05);
+}
+
+.view-btn {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .view-btn {
+    opacity: 1;
+}
+
+    
+        </style>
   </head>
 
   <body>
@@ -75,8 +245,8 @@
       <div class="col-md-6 col-5 mt-1">
           <a href="index.html" class="navbar-brand ms-2 ms-lg-0">
               <!-- <h1 class="mb-0 text-primary text-uppercase">logo</h1> -->
-               <img class="img-fluid col-md-2 col-3 position-absolute top-0 " style="z-index: 999;" src="img/nlogo.png" alt="logo">
-          </a>                    
+              <img class="img-fluid col-md-22 col-5 position-absolute " style="z-index: 999; top: -10px;" src="img/nlogo.png" alt="logo">
+            </a>                    
       </div>
       <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
@@ -144,289 +314,681 @@
 
     <!-- product section Start -->
     <div class="container-xxl py-5 text-dark" >
+
+    <!-- antique finish -->
     <div class="container">
         <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-            <p class="d-inline-block bg-secondary text-primary py-1 px-4">Our Product</p>
-            <h1 class="text-uppercase text-dark">Our Product</h1>
+            <!-- <p class="d-inline-block bg-danger text-white py-1 px-4">Our Product</p> -->
+            <!-- <h1 class="text-uppercase text-dark display-3">Antique <span class="text-danger">Finish</span></h1> -->
         </div>
+        <h1 class="text-uppercase text-dark display-3 py-5 border-bottom">Antique <span class="text-danger">Finish</span></h1>
+
+
+    <!-- Two Banner Section Start-->
+    <div class=" section section-wide section-padding pt-0">
+        <div class="container-fluid">
+            <div class="row mbn-30">
+
+                <!--Banner Start-->
+                <div class="col-sm-6 col-12 mb-md-3 mb-3">
+                    <div class="banner" >
+                        <a><img src="img/nb4.jpg" alt="Banner" style="border-radius: 20px;" ></a>
+                    </div>
+                </div>
+                <!--Banner End-->
+
+                <!--Banner Start-->
+                <div class="col-sm-6 col-12 mb-3">
+                    <div class="banner">
+                        <a ><img src="img/nb5.jpg" alt="Banner" style="border-radius: 20px;"></a>
+                    </div>
+                </div>
+                <!--Banner End-->
+
+            </div>
+        </div>
+    </div>
+    <!--Banner Section End-->
 
     <!-- This is the first card section -->
-        <div class="row g-4">
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <!-- Card 1 -->
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="img/product/p21.png" alt="" 
-                            style="transition: transform 0.5s ease-in-out; will-change: transform;" 
-                            onmouseover="this.style.transform='scale(1.05)'" 
-                            onmouseout="this.style.transform='scale(1)'">
-                    </div>
-                    <div class="bg-secondary text-start p-4 rounded shadow">
-                        <h5 class="text-uppercase">Commercial Fry Pan</h5>
-                    
-                        <!-- Product Features Section -->
-                        <div class="bg-light p-3  shadow-sm mt-3" style="border-radius: 10px;">
-                            <h6 class="text-dark">Product Features:</h6>
-                            <p class="text-dark mb-0"><strong>Size:</strong> 19cm, 21cm, 23cm, 25cm</p>
-                        </div>
-                        <a href="#">
-                            <button class="btn text-white w-50 mt-3" 
-                                style="background-color: red; border-radius: 10px; transition: transform 0.5s ease-in-out;" 
-                                onmouseover="this.style.transform='scale(1.05)'" 
-                                onmouseout="this.style.transform='scale(1)'">
-                                Inquiry
-                            </button>
-                        </a>
-                    </div>
+    <div class="row g-4 py-4">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" >
+            <!-- Card 1 -->
+            <div class="team-item shadow">
+                <div class="position-relative overflow-hidden  image-container">
+                    <img class="img-fluid" src="img/product/p21.png" alt="">
+                    <button class="view-btn">View Product</button>
                 </div>
+                <div class="text-start p-4 rounded border-top">
+                    <h5 class="text-uppercase text-dark">Commercial Fry Pan</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <!-- Card 2 -->
+            <div class="team-item shadow">
+                <div class="position-relative overflow-hidden  image-container">
+                    <img class="img-fluid" src="img/product/p40.png" alt="">
+                    <button class="view-btn">View Product</button>
+                </div>
+                <div class="text-start p-4 rounded border-top">
+                    <h5 class="text-uppercase text-dark">Commercial Fry Pan</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <!-- Card 3 -->
+            <div class="team-item shadow">
+                <div class="position-relative overflow-hidden image-container">
+                    <img class="img-fluid" src="img/product/p39.png" alt="">
+                    <button class="view-btn">View Product</button>
+                </div>
+                <div class="text-start p-4 rounded border-top">
+                    <h5 class="text-uppercase text-dark">Commercial Fry Pan</h5>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <!-- Card 2 -->
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="img/product/p40.png" alt="" 
-                            style="transition: transform 0.5s ease-in-out; will-change: transform;" 
-                            onmouseover="this.style.transform='scale(1.05)'" 
-                            onmouseout="this.style.transform='scale(1)'">
-                    </div>
-                    <div class="bg-secondary text-start p-4 rounded shadow">
-                        <h5 class="text-uppercase">Deluxe Sauce Pan</h5>
-                    
-                        <!-- Product Features Section -->
-                        <div class="bg-light p-3  shadow-sm mt-3" style="border-radius: 10px;">
-                            <h6 class="text-dark">Product Features:</h6>
-                            <p class="text-dark mb-0"><strong>Size:</strong> 16cm, 18cm, 20cm, 22cm</p>
-                        </div>
-                        <a href="#">
-                            <button class="btn text-white w-50 mt-3" 
-                                style="background-color: red; border-radius: 10px; transition: transform 0.5s ease-in-out;" 
-                                onmouseover="this.style.transform='scale(1.05)'" 
-                                onmouseout="this.style.transform='scale(1)'">
-                                Inquiry
-                            </button>
-                        </a>
+    <!-- This is the two banner img with the deatils -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row h-100 gy-3">
+                <!-- First Section with Heading and Paragraph -->
+                <div class="col-md-4 order-md-2 d-flex align-items-center  shadow">
+                    <div class="">
+                        <h2 class="text-primary">Nagina</h2>
+                        <p class="text-dark">
+                            Introducing our premium <strong>Antique Series</strong>, a perfect blend of elegance and durability. Designed for both home chefs and professionals, this series offers superior non-stick performance, even heat distribution, and an ergonomic design. Crafted with high-quality materials, it ensures long-lasting use while adding a touch of sophistication to your kitchen. Experience the perfect combination of tradition and innovation with Nagina's Antique Series.
+                        </p>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <!-- Card 3 -->
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="img/product/p39.png" alt="" 
-                            style="transition: transform 0.5s ease-in-out; will-change: transform;" 
-                            onmouseover="this.style.transform='scale(1.05)'" 
-                            onmouseout="this.style.transform='scale(1)'">
-                    </div>
-                    <div class="bg-secondary text-start p-4 rounded shadow">
-                        <h5 class="text-uppercase">Handi</h5>
-                    
-                        <!-- Product Features Section -->
-                        <div class="bg-light p-3  shadow-sm mt-3" style="border-radius: 10px;">
-                            <h6 class="text-dark">Product Features:</h6>
-                            <p class="text-dark mb-0"><strong>Size:</strong> 18, 19, 20, 22, 27, 29, 32cm</p>
+                <!-- Second Section with Card -->
+                <div class="col-md-8 order-md-1 d-flex">
+                    <div style="border-radius: 5px;" class="card w-100 text-start">
+                        <img class="card-img-top" src="img/nb11.png" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Non Stick Gift Set 
+                                <a href="#"><i class="bi bi-arrow-right"></i></a>
+                            </h4>
+                            <!-- <p class="card-text">Body</p> -->
                         </div>
-                        <a href="#">
-                            <button class="btn text-white w-50 mt-3" 
-                                style="background-color: red; border-radius: 10px; transition: transform 0.5s ease-in-out;" 
-                                onmouseover="this.style.transform='scale(1.05)'" 
-                                onmouseout="this.style.transform='scale(1)'">
-                                Inquiry
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                <!-- Card 4 -->
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="img/product/p36.png" alt="" 
-                            style="transition: transform 0.5s ease-in-out; will-change: transform;" 
-                            onmouseover="this.style.transform='scale(1.05)'" 
-                            onmouseout="this.style.transform='scale(1)'">
-                    </div>
-                    <div class="bg-secondary text-start p-4 rounded shadow">
-                        <h5 class="text-uppercase">Big Handi</h5>
-                    
-                        <!-- Product Features Section -->
-                        <div class="bg-light p-3  shadow-sm mt-3" style="border-radius: 10px;">
-                            <h6 class="text-dark">Product Features:</h6>
-                            <p class="text-dark mb-0"><strong>Size:</strong> 18, 19, 20, 22, 27, 29, 32cm</p>
-                        </div>
-                        <a href="#">
-                            <button class="btn text-white w-50 mt-3" 
-                                style="background-color: red; border-radius: 10px; transition: transform 0.5s ease-in-out;" 
-                                onmouseover="this.style.transform='scale(1.05)'" 
-                                onmouseout="this.style.transform='scale(1)'">
-                                Inquiry
-                            </button>
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+     
+
 
     <!-- This is the second line of the product -->
-        <div class="row g-4 mt-4">
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <!-- Card 5 -->
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="img/product/p38.png" alt="" 
-                            style="transition: transform 0.5s ease-in-out; will-change: transform;" 
-                            onmouseover="this.style.transform='scale(1.05)'" 
-                            onmouseout="this.style.transform='scale(1)'">
-                    </div>
-                    <div class="bg-secondary text-start p-4">
-                        <h5 class="text-uppercase">stockpot</h5>
-
-                        <!-- Product Features Section -->
-                        <div class="bg-light p-3  shadow-sm mt-3" style="border-radius: 10px;">
-                            <h6 class="text-dark">Product Features:</h6>
-                            <p class="text-dark mb-0"><strong>Size:</strong> 17, 18, 19, 21, 23, 25, 27, 29, 32cm</p>
-                        </div>
-                        <a href="#">
-                            <button class="btn text-white w-50 mt-3" 
-                                style="background-color: red; border-radius: 10px; transition: transform 0.5s ease-in-out;" 
-                                onmouseover="this.style.transform='scale(1.05)'" 
-                                onmouseout="this.style.transform='scale(1)'">
-                                Inquiry
-                            </button>
-                        </a>
-                        <!-- <span class="text-primary">Designation</span> -->
-                    </div>
+    <div class="row g-4 mt-4">
+       <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" >
+            <!-- Card 1 -->
+            <div class="team-item shadow">
+                <div class="position-relative overflow-hidden  image-container">
+                    <img class="img-fluid" src="img/product/p38.png" alt="">
+                    <button class="view-btn">View Product</button>
+                </div>
+                <div class="text-start p-4 rounded border-top">
+                    <h5 class="text-uppercase text-dark">Commercial Fry Pan</h5>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <!-- Card 6 -->
-                <div class="team-item">
-                    <div class="position-relative overflow-hidden">
-                        <img class="img-fluid" src="img/product/p37.png" alt="" 
-                            style="transition: transform 0.5s ease-in-out; will-change: transform;" 
-                            onmouseover="this.style.transform='scale(1.05)'" 
-                            onmouseout="this.style.transform='scale(1)'">
-                    </div>
-                    <div class="bg-secondary text-start p-4">
-                        <h5 class="text-uppercase">Tope</h5>
-
-                        <!-- Product Features Section -->
-                        <div class="bg-light p-3  shadow-sm mt-3" style="border-radius: 10px;">
-                            <h6 class="text-dark">Product Features:</h6>
-                            <p class="text-dark mb-0"><strong>Size:</strong> 12x24</p>
-                        </div>
-                        <a href="#">
-                            <button class="btn text-white w-50 mt-3" 
-                                style="background-color: red; border-radius: 10px; transition: transform 0.5s ease-in-out;" 
-                                onmouseover="this.style.transform='scale(1.05)'" 
-                                onmouseout="this.style.transform='scale(1)'">
-                                Inquiry
-                            </button>
-                        </a>
-                        <!-- <span class="text-primary">Designation</span> -->
-                    </div>
-                </div>
-            </div>
-           
         </div>
-        <!-- End second line  -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" >
+            <!-- Card 1 -->
+            <div class="team-item shadow">
+                <div class="position-relative overflow-hidden  image-container">
+                    <img class="img-fluid" src="img/product/p37.png" alt="">
+                    <button class="view-btn">View Product</button>
+                </div>
+                <div class="text-start p-4 rounded border-top">
+                    <h5 class="text-uppercase text-dark">Commercial Fry Pan</h5>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- End second line  -->
+    </div>
+
+    <!-- marble finish -->
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <!-- <p class="d-inline-block bg-secondary text-primary py-1 px-4">Our Product</p> -->
+            <!-- <h1 class="text-uppercase text-dark py-5 display-3">Marble <span class="text-danger">Finish</span></h1> -->
+        </div>
+
+        <h1 class="text-uppercase text-dark display-3 py-5 border-bottom">Marble <span class="text-danger">Finish</span></h1>
+
+    <!-- Three Banner Section Start-->
+    <div class="section section-wide section-padding">
+        <div class="container-fluid">
+            <div class="row mbn-30">
+
+                <!--Banner Start-->
+                <div class="col-sm-3 col-6 mb-3">
+                    <!-- <div class="banner">
+                        <a href="#"><img src="img/nb1.jpg" alt="Banner" style="border-radius: 20px;"></a>
+                    </div> -->
+                    <div class="  card text-start">
+                        <img class="card-img-top" src="img/nb1.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Hard Anodised<a href="#"><i class="bi bi-arrow-right"></i></a></h4>
+                            <!-- <p class="card-text">Body</p> -->
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--Banner End-->
+
+                <!--Banner Start-->
+                <div class="col-sm-3 col-6 order-sm-3 mb-3">
+                    <!-- <div class="banner">
+                        <a href="#"><img src="img/nb3.jpg" alt="Banner" style="border-radius: 20px;"></a>
+                    </div> -->
+                    <div class="  card text-start">
+                        <img class="card-img-top" src="img/nb3.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Oil Free Series<a href="#"><i class="bi bi-arrow-right"></i></a></h4>
+                            <!-- <p class="card-text">Body</p> -->
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--Banner End-->
+
+                <!--Banner Start-->
+                <div class="col-sm-6 col-12 mb-3">
+                    <!-- <div class="banner">
+                        <a href="#"><img src="img/nb2.jpg" alt="Banner" style="border-radius: 20px;"></a>
+                    </div> -->
+                    <div class=" card text-start">
+                        <img class="card-img-top" src="img/nb2.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Copper Bottom Handi <a href="#"><i class="bi bi-arrow-right"></i></a></h4>
+                            <!-- <p class="card-text">Body</p> -->
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--Banner End-->
+
+            </div>
+        </div>
+    </div>
+    <!--Banner Section End-->
+
+    <!-- This is the first card section -->
+    <div class="row g-4 py-4">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" >
+            <!-- Card 1 -->
+            <div class="team-item shadow">
+                <div class="position-relative overflow-hidden  image-container">
+                    <img class="img-fluid" src="img/product/p47.png" alt="">
+                    <button class="view-btn">View Product</button>
+                </div>
+                <div class="text-start p-4 rounded border-top">
+                    <h5 class="text-uppercase text-dark">Commercial Fry Pan</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <!-- Card 2 -->
+            <div class="team-item shadow">
+                <div class="position-relative overflow-hidden  image-container">
+                    <img class="img-fluid" src="img/product/p48.png" alt="">
+                    <button class="view-btn">View Product</button>
+                </div>
+                <div class="text-start p-4 rounded border-top">
+                    <h5 class="text-uppercase text-dark">Commercial Fry Pan</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <!-- Card 3 -->
+            <div class="team-item shadow">
+                <div class="position-relative overflow-hidden image-container">
+                    <img class="img-fluid" src="img/product/p49.png" alt="">
+                    <button class="view-btn">View Product</button>
+                </div>
+                <div class="text-start p-4 rounded border-top">
+                    <h5 class="text-uppercase text-dark">Commercial Fry Pan</h5>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- This is the second line of the product -->
+    <div class="row g-4 mt-4">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" >
+            <!-- Card 1 -->
+            <div class="team-item shadow">
+                <div class="position-relative overflow-hidden  image-container">
+                    <img class="img-fluid" src="img/product/p50.png" alt="">
+                    <button class="view-btn">View Product</button>
+                </div>
+                <div class="text-start p-4 rounded border-top">
+                    <h5 class="text-uppercase text-dark">Commercial Fry Pan</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" >
+            <!-- Card 1 -->
+            <div class="team-item shadow">
+                <div class="position-relative overflow-hidden  image-container">
+                    <img class="img-fluid" src="img/product/p51.png" alt="">
+                    <button class="view-btn">View Product</button>
+                </div>
+                <div class="text-start p-4 rounded border-top">
+                    <h5 class="text-uppercase text-dark">Commercial Fry Pan</h5>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- End second line  -->
+
+      <!-- This is the five banner img with the deatils -->
+      <section class="py-5">
+        <div class="container">
+            <h2 class="text-white text-center">DISCOVER A WORLD OF STAINLESS-STEEL ART</h2>
+            <div class="row h-100 gy-3 mb-4">
+                <div class="col-md-4 d-flex">
+                    <div class="row gy-3">
+                        <div class="col-md-12 d-flex">
+                            <div style="border-radius: 5px;" class="card text-start">
+                                <img class="card-img-top" src="img/nb9.png" alt="Title" />
+                                <div class="card-body">
+                                    <h4 class="card-title text-primary">Antique Flower Set <a href="#"><i class="bi bi-arrow-right"></i></a></h4>
+                                    <!-- <p class="card-text">Body</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 d-flex">
+                            <div style="border-radius: 5px;" class="card text-start">
+                                <img class="card-img-top" src="img/nb10.jpg" alt="Title" />
+                                <div class="card-body">
+                                    <h4 class="card-title text-primary">Iroko Series <a href="#"><i class="bi bi-arrow-right"></i></a></h4>
+                                    <!-- <p class="card-text">Body</p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 d-flex">
+                    <div style="border-radius: 5px;" class="card text-start">
+                        <img class="card-img-top h-100 img-fluid" src="img/nb8.png" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Masala Box Stainless Steel <a href="#"><i class="bi bi-arrow-right"></i></a></h4>
+                            <!-- <p class="card-text">Body</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>     
+    
+    </div>
+
+    <!-- Hammer series -->
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <!-- <p class="d-inline-block bg-secondary text-primary py-1 px-4">Our Product</p> -->
+            <!-- <h1 class="text-uppercase text-dark py-5 display-3">Hammer <span class="text-danger">Series</span></h1> -->
+        </div>
+
+        <h1 class="text-uppercase text-dark display-3 py-5 border-bottom">Hammer <span class="text-danger">Series</span></h1>
+
+
+         <!-- This is the five banner img with the deatils -->
+      <section class="py-5">
+        <div class="container">
+            <h2 class="text-white text-center">DISCOVER A WORLD OF STAINLESS-STEEL ART</h2>
+            <div class="row h-100 gy-3 mb-4">
+                <div class="col-md-4 d-flex">
+                    <div class="row gy-3">
+                        <div class="col-md-12 d-flex">
+                            <div style="border-radius: 5px;" class="card text-start">
+                                <img class="card-img-top" src="img/nb9.png" alt="Title" />
+                                <div class="card-body">
+                                    <h4 class="card-title text-primary">Antique Flower Set <a href="#"><i class="bi bi-arrow-right"></i></a></h4>
+                                    <!-- <p class="card-text">Body</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 d-flex">
+                            <div style="border-radius: 5px;" class="card text-start">
+                                <img class="card-img-top" src="img/nb10.jpg" alt="Title" />
+                                <div class="card-body">
+                                    <h4 class="card-title text-primary">Iroko Series <a href="#"><i class="bi bi-arrow-right"></i></a></h4>
+                                    <!-- <p class="card-text">Body</p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 d-flex">
+                    <div style="border-radius: 5px;" class="card text-start">
+                        <img class="card-img-top h-100 img-fluid" src="img/nb8.png" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Masala Box Stainless Steel <a href="#"><i class="bi bi-arrow-right"></i></a></h4>
+                            <!-- <p class="card-text">Body</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>     
+
+    <!-- This is the first card section -->
+    <div class="row g-4 py-4">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" >
+            <!-- Card 1 -->
+            <div class="team-item shadow">
+                <div class="position-relative overflow-hidden  image-container">
+                    <img class="img-fluid" src="img/product/p21.png" alt="">
+                    <button class="view-btn">View Product</button>
+                </div>
+                <div class="text-start p-4 rounded border-top">
+                    <h5 class="text-uppercase text-dark">Commercial Fry Pan</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <!-- Card 2 -->
+            <div class="team-item shadow">
+                <div class="position-relative overflow-hidden  image-container">
+                    <img class="img-fluid" src="img/product/p40.png" alt="">
+                    <button class="view-btn">View Product</button>
+                </div>
+                <div class="text-start p-4 rounded border-top">
+                    <h5 class="text-uppercase text-dark">Commercial Fry Pan</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <!-- Card 3 -->
+            <div class="team-item shadow">
+                <div class="position-relative overflow-hidden image-container">
+                    <img class="img-fluid" src="img/product/p39.png" alt="">
+                    <button class="view-btn">View Product</button>
+                </div>
+                <div class="text-start p-4 rounded border-top">
+                    <h5 class="text-uppercase text-dark">Commercial Fry Pan</h5>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- This is the second line of the product -->
+    <div class="row g-4 mt-4">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" >
+            <!-- Card 1 -->
+            <div class="team-item shadow">
+                <div class="position-relative overflow-hidden  image-container">
+                    <img class="img-fluid" src="img/product/p38.png" alt="">
+                    <button class="view-btn">View Product</button>
+                </div>
+                <div class="text-start p-4 rounded border-top">
+                    <h5 class="text-uppercase text-dark">Commercial Fry Pan</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" >
+            <!-- Card 1 -->
+            <div class="team-item shadow">
+                <div class="position-relative overflow-hidden  image-container">
+                    <img class="img-fluid" src="img/product/p37.png" alt="">
+                    <button class="view-btn">View Product</button>
+                </div>
+                <div class="text-start p-4 rounded border-top">
+                    <h5 class="text-uppercase text-dark">Commercial Fry Pan</h5>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- End second line  -->
+    </div>
+    
+    <!-- Flower series -->
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <!-- <p class="d-inline-block bg-secondary text-primary py-1 px-4">Our Product</p> -->
+            <!-- <h1 class="text-uppercase text-dark py-5 display-3">Flower  <span class="text-danger">Series</span></h1> -->
+        </div>
+
+        <h1 class="text-uppercase text-dark display-3 py-5 border-bottom">Flower <span class="text-danger">Series</span></h1>
+
+        <!-- This is the five banner img with the deatils -->
+        <section class="py-5">
+        <div class="container">   
+            <div class="row h-100 gy-3">
+                <div class="col-md-4 order-md-2 d-flex">
+                    <div style="border-radius: 5px;" class="card text-start">
+                        <img class="card-img-top h-100 img-fluid" src="img/nb12.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Iroko Series <a href="#"><i class="bi bi-arrow-right"></i></a></h4>
+                            <!-- <p class="card-text">Body</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 order-md-1 d-flex">
+                    <div style="border-radius: 5px;" class="card w-100   text-start">
+                        <img class="card-img-top" src="img/nb11.png" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Non Stick Gift Set <a href="#"><i class="bi bi-arrow-right"></i></a></h4>
+                            <!-- <p class="card-text">Body</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>     
+        
+     <!-- This is the first card section -->
+     <div class="row g-4 py-4">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" >
+            <!-- Card 1 -->
+            <div class="team-item shadow">
+                <div class="position-relative overflow-hidden  image-container">
+                    <img class="img-fluid" src="img/product/p21.png" alt="">
+                    <button class="view-btn">View Product</button>
+                </div>
+                <div class="text-start p-4 rounded border-top">
+                    <h5 class="text-uppercase text-dark">Commercial Fry Pan</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <!-- Card 2 -->
+            <div class="team-item shadow">
+                <div class="position-relative overflow-hidden  image-container">
+                    <img class="img-fluid" src="img/product/p40.png" alt="">
+                    <button class="view-btn">View Product</button>
+                </div>
+                <div class="text-start p-4 rounded border-top">
+                    <h5 class="text-uppercase text-dark">Commercial Fry Pan</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <!-- Card 3 -->
+            <div class="team-item shadow">
+                <div class="position-relative overflow-hidden image-container">
+                    <img class="img-fluid" src="img/product/p39.png" alt="">
+                    <button class="view-btn">View Product</button>
+                </div>
+                <div class="text-start p-4 rounded border-top">
+                    <h5 class="text-uppercase text-dark">Commercial Fry Pan</h5>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Three Banner Section Start-->
+    <div class="section section-wide section-padding">
+        <div class="container-fluid">
+            <div class="row mbn-30">
+
+                <!--Banner Start-->
+                <div class="col-sm-3 col-6 mb-3">
+                    <!-- <div class="banner">
+                        <a href="#"><img src="img/nb1.jpg" alt="Banner" style="border-radius: 20px;"></a>
+                    </div> -->
+                    <div class="  card text-start">
+                        <img class="card-img-top" src="img/nb1.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Hard Anodised<a href="#"><i class="bi bi-arrow-right"></i></a></h4>
+                            <!-- <p class="card-text">Body</p> -->
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--Banner End-->
+
+                <!--Banner Start-->
+                <div class="col-sm-3 col-6 order-sm-3 mb-3">
+                    <!-- <div class="banner">
+                        <a href="#"><img src="img/nb3.jpg" alt="Banner" style="border-radius: 20px;"></a>
+                    </div> -->
+                    <div class="  card text-start">
+                        <img class="card-img-top" src="img/nb3.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Oil Free Series<a href="#"><i class="bi bi-arrow-right"></i></a></h4>
+                            <!-- <p class="card-text">Body</p> -->
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--Banner End-->
+
+                <!--Banner Start-->
+                <div class="col-sm-6 col-12 mb-3">
+                    <!-- <div class="banner">
+                        <a href="#"><img src="img/nb2.jpg" alt="Banner" style="border-radius: 20px;"></a>
+                    </div> -->
+                    <div class=" card text-start">
+                        <img class="card-img-top" src="img/nb2.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">Copper Bottom Handi <a href="#"><i class="bi bi-arrow-right"></i></a></h4>
+                            <!-- <p class="card-text">Body</p> -->
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--Banner End-->
+
+            </div>
+        </div>
+    </div>
+    <!--Banner Section End-->
+
+    <!-- This is the second line of the product -->
+    <div class="row g-4 mt-4">
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" >
+            <!-- Card 1 -->
+            <div class="team-item shadow">
+                <div class="position-relative overflow-hidden  image-container">
+                    <img class="img-fluid" src="img/product/p38.png" alt="">
+                    <button class="view-btn">View Product</button>
+                </div>
+                <div class="text-start p-4 rounded border-top">
+                    <h5 class="text-uppercase text-dark">Commercial Fry Pan</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" >
+            <!-- Card 1 -->
+            <div class="team-item shadow">
+                <div class="position-relative overflow-hidden  image-container">
+                    <img class="img-fluid" src="img/product/p37.png" alt="">
+                    <button class="view-btn">View Product</button>
+                </div>
+                <div class="text-start p-4 rounded border-top">
+                    <h5 class="text-uppercase text-dark">Commercial Fry Pan</h5>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- End second line  -->
+
     </div>
     </div>
+    
     <!-- product section Team End -->  
     
 
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-          <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-              <p class="d-inline-block bg-secondary text-primary py-1 px-4 ">Testimonial</p>
-              <h1 class="text-uppercase text-dark">What Our Clients Say!</h1>
-          </div>
-          <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-              <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='https://www.hotazy.com/images/male.png' alt=''>">
-                  <h4 class="text-uppercase">Ayush</h4>
-                  <!-- <p class="text-primary">Profession</p> -->
-                  <span class="fs-5">I’m really impressed with the quality of the products from Nagina Home Appliance. They work perfectly and look great in my home</span>
-              </div>
-              <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='https://www.hotazy.com/images/male.png' alt=''>">
-                  <h4 class="text-uppercase">Kulldeep</h4>
-                  <!-- <p class="text-primary">Profession</p> -->
-                  <span class="fs-5">"The customer service at Nagina Home Appliance was top-notch. They were quick to respond and helped me with all my concerns.</span>
-              </div>
-              <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='https://www.hotazy.com/images/female.png' alt=''>">
-                  <h4 class="text-uppercase">kushi</h4>
-                  <!-- <p class="text-primary">Profession</p> -->
-                  <span class="fs-5">I highly recommend Nagina Home Appliance. The products are reliable, affordable, and truly enhance the functionality of my home</span>
-              </div>
-          </div>  
-      </div>
-    </div>
-    <!-- Testimonial End -->
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-secondary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-      <div class="container py-5">
-          <div class="row g-5">
-              <div class="col-lg-4 col-md-6">
-                  <h4 class="text-uppercase mb-4">Get In Touch</h4>
-                  <div class="d-flex align-items-center mb-2">
-                      <div class="btn-square bg-dark flex-shrink-0 me-3">
-                          <span class="fa fa-map-marker-alt text-primary"></span>
-                      </div>
-                      <span>Plot No. 12, SHED- 196, Ground Floor, Block - A Master Mohalla, Libaspur, Delhi - 110042, India </span>
-                  </div>
-                  <div class="d-flex align-items-center mb-2">
-                      <div class="btn-square bg-dark flex-shrink-0 me-3">
-                          <span class="fa fa-phone-alt text-primary"></span>
-                      </div>
-                      <span>08045479689</span>
-                  </div>
-                  <div class="d-flex align-items-center">
-                      <div class="btn-square bg-dark flex-shrink-0 me-3">
-                          <span class="fa fa-envelope-open text-primary"></span>
-                      </div>
-                      <span>info@example.com</span>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                  <h4 class="text-uppercase mb-4">Quick Links</h4>
-                  <a class="btn btn-link" href="">Home</a>
-                  <a class="btn btn-link" href="">About Us</a>
-                  <a class="btn btn-link" href="">Contact Us</a>
-                  <a class="btn btn-link" href="">Our Services</a>
-                  <!-- <a class="btn btn-link" href="">Terms & Condition</a> -->
-                  <!-- <a class="btn btn-link" href="">Support</a> -->
-              </div>
-              <div class="col-lg-4 col-md-6">
-                  <h4 class="text-uppercase mb-4">Newsletter</h4>
-                  <div class="position-relative mb-4">
-                      <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                      <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                  </div>
-                  <div class="d-flex pt-1 m-n1">
-                      <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-twitter"></i></a>
-                      <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                      <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-youtube"></i></a>
-                      <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="container">
-          <div class="copyright">
-              <div class="row">
-                  <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                      &copy; <a class="border-bottom" href="#">Nagina</a>, All Right Reserved.
-                  </div>
-                  <div class="col-md-6 text-center text-md-end">
-                      <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                      Designed By <a class="border-bottom" href="https://viraladsmedia.com">viraladsmedia</a>
-                  </div>
-              </div>
-          </div>
-      </div>
+   <!-- Footer Start -->
+   <div class="container-fluid  text-light footer pt-5 wow fadeIn border-top" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <h4 class="text-uppercase mb-4 text-dark">Get In Touch</h4>
+                <div class="d-flex align-items-center mb-2">
+                    <div class="btn-square bg-dark flex-shrink-0 me-3">
+                        <span class="fa fa-map-marker-alt text-primary"></span>
+                    </div>
+                    <span>Plot No. 12, SHED- 196, Ground Floor, Block - A Master Mohalla, Libaspur, Delhi - 110042, India </span>
+                </div>
+                <div class="d-flex align-items-center mb-2">
+                    <div class="btn-square bg-dark flex-shrink-0 me-3">
+                        <span class="fa fa-phone-alt text-primary"></span>
+                    </div>
+                    <span>08045479689</span>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="btn-square bg-dark flex-shrink-0 me-3">
+                        <span class="fa fa-envelope-open text-primary"></span>
+                    </div>
+                    <span>info@example.com</span>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h4 class="text-uppercase mb-4 text-dark">Quick Links</h4>
+                <a class="btn btn-link" href="">Home</a>
+                <a class="btn btn-link" href="">About Us</a>
+                <a class="btn btn-link" href="">Contact Us</a>
+                <a class="btn btn-link" href="">Our Services</a>
+                <!-- <a class="btn btn-link" href="">Terms & Condition</a> -->
+                <!-- <a class="btn btn-link" href="">Support</a> -->
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h4 class="text-uppercase mb-4 text-dark">Social Media</h4>
+                <!-- <div class="position-relative mb-4">
+                    <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                </div> -->
+                <div class="d-flex pt-1 m-n1">
+                    <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- Footer End -->
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">Nagina</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="border-bottom" href="https://viraladsmedia.com">viraladsmedia</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
 
     <!-- This is the whatsapp section -->
     <div class="position-relative">
